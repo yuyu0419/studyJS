@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hoisting</title>
+    <script src="js/hoisting.js"></script>
+</head>
+<body>
+    <div class=hoisting>
+        <h2>Hoisting</h2>
+        <em style="font-size: 10px;">console창에서도 확인 가능</em>
+        <p>
+            <strong>var의 hoisting의 예</strong><br>
+            console.log(a) //undefined<br>
+            a = 0; <br>
+            console.log(a) //0<br>
+            var a = 1;<br>
+            <br><br>
+            호이스팅은 선언부만 올라가므로 a는 1이 되지 않는다.<br>
+            var의 이런 문제때문에 es6부터 let이 도입되었다.<br>
+            let은 위와 같은 상황에서는 Uncaught ReferenceError가 발생한다.<br>
+            만약 이 상황에서 a를 1로 만들고 싶다면 a에 값을 주지 않는다.<br>
+            <br><br>
+            <strong>let과 var의 비교</strong><br>
+            let b; //var b도 가능함<br> 
+            console.log(b) //undefinde<br>
+            b = 0; <br>
+            console.log(b) //0 <br>
+            b = 1;<br>
+            console.log(b) //1<br>
+        </p>
+        
+    </div>
+</body>
+</html>
